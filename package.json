@@ -1,0 +1,59 @@
+{
+  "name": "string-word-wrap",
+  "version": "1.0.0",
+  "description": "Wrap a string to a maximum line length. Unicode-aware, with hyphen and soft hyphen breaking, and first-line or hanging indentation.",
+  "keywords": [
+    "word-wrap",
+    "wrap",
+    "string",
+    "text",
+    "indent",
+    "line-break",
+    "cli",
+    "textwrap",
+    "hyphenation",
+    "soft-hyphen",
+    "hanging-indent",
+    "unicode"
+  ],
+  "homepage": "https://github.com/dmnsgn/string-word-wrap",
+  "bugs": "https://github.com/dmnsgn/string-word-wrap/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmnsgn/string-word-wrap.git"
+  },
+  "funding": [
+    {
+      "type": "individual",
+      "url": "https://paypal.me/dmnsgn"
+    },
+    {
+      "type": "individual",
+      "url": "https://commerce.coinbase.com/checkout/56cbdf28-e323-48d8-9c98-7019e72c97f3"
+    }
+  ],
+  "license": "MIT",
+  "author": "Damien Seguin (https://github.com/dmnsgn)",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "main": "./index.js",
+  "types": "./types/index.d.ts",
+  "scripts": {
+    "test": "node --experimental-test-coverage test",
+    "test:watch": "node --watch --experimental-test-coverage test"
+  },
+  "packageManager": "npm@11.3.0",
+  "engines": {
+    "node": ">=24.0.0",
+    "snowdev": ">=3.0.0-alpha.3"
+  },
+  "snowdev": {
+    "serve": false
+  }
+}
