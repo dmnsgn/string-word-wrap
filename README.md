@@ -78,7 +78,53 @@ Line length is measured in grapheme clusters (user-perceived characters): combin
 
 <!-- api-start -->
 
-Auto-generated API content.
+## Functions
+
+<dl>
+<dt><a href="#wordWrap">wordWrap(string, [length], [options])</a> ⇒ <code>string</code></dt>
+<dd><p>Wrap a string to a maximum number of characters per line, optionally with
+indentation.</p>
+</dd>
+</dl>
+
+## Typedefs
+
+<dl>
+<dt><a href="#WordWrapOptions">WordWrapOptions</a> : <code>object</code></dt>
+<dd></dd>
+</dl>
+
+<a name="wordWrap"></a>
+
+## wordWrap(string, [length], [options]) ⇒ <code>string</code>
+
+Wrap a string to a maximum number of characters per line, optionally with
+indentation.
+
+**Kind**: global function
+
+| Param     | Type                                             | Default         |
+| --------- | ------------------------------------------------ | --------------- |
+| string    | <code>string</code>                              |                 |
+| [length]  | <code>number</code>                              | <code>10</code> |
+| [options] | [<code>WordWrapOptions</code>](#WordWrapOptions) | <code>{}</code> |
+
+<a name="WordWrapOptions"></a>
+
+## WordWrapOptions : <code>object</code>
+
+**Kind**: global typedef
+**Properties**
+
+| Name             | Type                                                             | Default                                    | Description                                                                                             |
+| ---------------- | ---------------------------------------------------------------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| [indent]         | <code>number</code> \| <code>string</code>                       | <code>0</code>                             | Number of spaces (or string) to prefix lines after the first one with.                                  |
+| [indentFirst]    | <code>number</code> \| <code>string</code>                       | <code>indent</code>                        | Number of spaces (or string) to prefix the first line with.                                             |
+| [newlineChar]    | <code>string</code>                                              | <code>&quot;\&quot;\\n\&quot;&quot;</code> | The characters to insert at the end of each line.                                                       |
+| [global]         | <code>boolean</code>                                             | <code>true</code>                          | Wrap the whole string or just the first line.                                                           |
+| [breakLongWords] | <code>boolean</code>                                             | <code>false</code>                         | Break words longer than the available line width.                                                       |
+| [hyphens]        | <code>&quot;none&quot;</code> \| <code>&quot;manual&quot;</code> | <code>&quot;manual&quot;</code>            | Break words at soft hyphens (U+00AD), adding a hyphen at the line end. Unused soft hyphens are removed. |
+| [trim]           | <code>boolean</code>                                             | <code>false</code>                         | Remove leading whitespace of each input line.                                                           |
 
 <!-- api-end -->
 
